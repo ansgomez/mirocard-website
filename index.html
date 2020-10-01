@@ -38,7 +38,7 @@
 				  <a class="nav-link" href="#open-source">Open Source</a>
         </li>
 				<li class="nav-item">
-				  <a class="nav-link" href="#buy">Buy</a>
+				  <a class="nav-link" href="#contact">Contact</a>
 				</li>
 			  </ul>
 			</div>
@@ -63,7 +63,7 @@
     <div class="overlay"></div>
       <div class="container">
       <h1 class="jumbotron-heading">MiroCard</h1>
-        <p class="lead text-muted">
+        <p class="lead text-muted-small">
           A brand-new product, bringing new digital services in a smart-card form factor.
         </p>
       </div>
@@ -102,12 +102,12 @@
       <hr class="featurette-divider" id="features">
 
       <div class="row featurette align-items-center">
-        <div class="col-md-5">
-          <img class='bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto' src="img/mirocard.jpg" preserveAspectRatio="xMidYMid slice" alt="Pocket-Sized MiroCard">
-        </div>
         <div class="col-md-7">
-          <h2 class="featurette-heading">High-performance. <br> <span class="text-muted">Card-Sized.</span></h2>
+          <h2 class="featurette-heading">High-performance <br> <span class="text-muted">Card-Sized.</span></h2>
           <p class="lead" align="justify">Compared to passive RFID cards, the active MiroCard has significantly more processing power and memory. This opens up new, secure applications with web-based authentication.</p>
+        </div>
+        <div class="col-md-5">
+          <img class='bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto' src="img/mirocard.png" preserveAspectRatio="xMidYMid slice" alt="Pocket-Sized MiroCard">
         </div>
       </div>
     
@@ -115,7 +115,7 @@
 
       <div class="row featurette align-items-center">
         <div class="col-md-7">
-          <h2 class="featurette-heading">Universal Compatibilty. <span class="text-muted">Enabled by Bluetooth.</span></h2>
+          <h2 class="featurette-heading">Universal Compatibility <span class="text-muted">Enabled by Bluetooth.</span></h2>
           <p class="lead">MiroCards are compatible with millions of BLE compatible devices.</p>
         </div>
         <div class="col-md-5">
@@ -127,7 +127,7 @@
 
       <div class="row featurette align-items-center">
         <div class="col-md-7">
-          <h2 class="featurette-heading">Want technical details?  <br>
+          <h2 class="featurette-heading">Want to know more?  <br>
             <span class="text-muted">Watch our webinar.</span>
           </h2>
           <p class="lead" align="justify">
@@ -139,7 +139,6 @@
         </div>
         <div class="col-md-5">
           <img class='bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto' src="img/webinar4.jpg" preserveAspectRatio="xMidYMid slice" alt="Pocket-Sized MiroCard">
-          <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
         </div>
       </div>
 
@@ -151,88 +150,38 @@
 
   <div class="container" id="specs">
     <div class="pricing-header pt-md-5 pb-md-4">
-      <h1 class="display-4 ">Technical Specifications</h1>
+      <h1 class="display-4">Technical Specifications</h1>
 
-      <p class="lead" align="justify">  
-        The MiroCard has been optimized for fast wake-up times, even in indoor lighting conditions: 250 lx - 2600 lx.
-      </p>
-
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th scope="col"> Environment </th>
-            <th scope="col"> Luminosity</th>
-            <th scope="col"> Wake-up time</th>
-            <th scope="col"> Input Power</th>
-            <th scope="col"> Performance </th> 
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td> Natural + indoor light</td>
-            <td> 2600 lx</td>
-            <td> 1.7 seconds</td>
-            <td> 980 uW</td>
-            <td> 16 packet/s </td>
-          </tr>
-          <tr>
-            <td> Bright indoor light</td>
-            <td> 1000 lx</td>
-            <td> 4 seconds</td>
-            <td> 370 uW</td>
-            <td> 6 packet/s </td>
-          </tr>
-          <tr>
-            <td> Office light</td>
-            <td> 500 lx </td>
-            <td> 7.7 seconds</td>
-            <td> 180 uW</td>
-            <td> 3 packet/s </td>
-          </tr>
-          <tr>
-            <td> Overhead light</td>
-            <td> 250 lx</td>
-            <td> 16 seconds</td>
-            <td> 85 uW</td>
-            <td> ~1 packet/s </td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="container fluid">
+        <p class="lead" align="justify">  
+          The MiroCard has been optimized for fast wake-up times, even in indoor lighting conditions: 250 lx - 2600 lx. 
+          Natural + indoor light	2600 lx	1.7 seconds	16 packet/s.
+        </p>
+      </div>
     </div>
   </div><!-- /.container -->
 
   <div class="container" id="open-source">
     <div class="pricing-header pt-md-5 pb-md-4">
-      <h1 class="display-4 ">Open-Source</h1>
-      <p class="lead" align="justify">The MiroCard and MiroReader app are designed by Andres Gomez, inspired by the <a href="https://gitlab.ethz.ch/tec/public/employees/sigristl/transient_ble_node">Transient BLE Node project </a>  developed at <a href="https://ethz.ch/en.html">ETH Zurich</a>. The  Transient BLE Node project is an open-source project released under the Creative Commons Attribution 4.0 International License. The MiroCard hardware, firmware, and MiroReader app are open-source projects released under an MIT License. </p> <br>
+      <h1 class="display-4">Open-Source</h1>
+      <p class="lead" align="justify">The MiroCard and MiroReader app are designed by <a href="mailto:andres@mirocard.swiss">Andres Gomez</a>, inspired by the <a href="https://gitlab.ethz.ch/tec/public/employees/sigristl/transient_ble_node">Transient BLE Node project </a>  developed at <a href="https://ethz.ch/en.html">ETH Zurich</a>. The  Transient BLE Node project is an open-source project released under the Creative Commons Attribution 4.0 International License. The MiroCard hardware, firmware, and MiroReader app are open-source projects released under an MIT License. </p> <br>
     </div>
     <div class="container">
-    <div class="card-deck mb-3">
+    <div class="card-deck mb-4">
       <div class="card mb-4 shadow-sm">
         <div class="card-header">
-          <h4 class="my-0 font-weight-normal">Hardware</h4>
+          <h4 class="my-0 font-weight-normal"  align="center">MiroCard Device</h4>
         </div>
         <div class="card-body">
           <ul class="list-unstyled mt-3 mb-4">
-            <li>Altium Design files for the MiroCard PCB.</li>
+            <li>Altium Design files and Contiki-NG software.</li>
           </ul>
           <button type="button" class="btn btn-lg btn-block btn-primary">Go to repository</button>
         </div>
       </div>
       <div class="card mb-4 shadow-sm">
         <div class="card-header">
-          <h4 class="my-0 font-weight-normal">Firmware</h4>
-        </div>
-        <div class="card-body">
-          <ul class="list-unstyled mt-3 mb-4">
-            <li>Contiki-NG software for the MiroCard.</li>
-          </ul>
-          <button type="button" class="btn btn-lg btn-block btn-primary">Go to repository</button>
-        </div>
-      </div>
-      <div class="card mb-4 shadow-sm">
-        <div class="card-header">
-          <h4 class="my-0 font-weight-normal">Android App</h4>
+          <h4 class="my-0 font-weight-normal" align="center">MiroReader Android App</h4>
         </div>
         <div class="card-body">
           <ul class="list-unstyled mt-3 mb-4">
@@ -246,12 +195,12 @@
   </div>
 
 
-  <div class="container" id="buy">
+  <div class="container" id="contact">
     <div class="pricing-header pt-md-5 pb-md-4">
-      <h1 class="display-4 ">Want your own?</h1>
+      <h1 class="display-4 ">Contact Us</h1>
 
       <p class="lead" align="justify">  
-        The MiroCard is currently available as engineering samples. If you are interested in buying or customizing your own MiroCard, please contact us: <a href="mailto:sales@miromico.ch">sales@miromico.ch</a>
+        The MiroCard is currently available as engineering samples. If you are interested in ordering MiroCards or customizing your own design, please contact us: <a href="mailto:info@miromico.ch">info@miromico.ch</a>
       </p>
 
     </div>
