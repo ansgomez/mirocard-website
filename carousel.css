@@ -58,6 +58,11 @@ header.masthead h1 {
   }
 }
 
+h1 span { 
+  position: relative;
+  top:-4rem;
+}
+
 /* PRICING CONTENT
 -------------------------------------------------- */
 
@@ -74,7 +79,6 @@ header.masthead h1 {
 .card-deck .card {
   min-width: 220px;
 }
-
 
 
 /* MARKETING CONTENT

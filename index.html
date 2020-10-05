@@ -37,9 +37,9 @@
 				<li class="nav-item">
 				  <a class="nav-link" href="#open-source">Open Source</a>
         </li>
-				<li class="nav-item">
+				<!-- <li class="nav-item">
 				  <a class="nav-link" href="#contact">Contact</a>
-				</li>
+				</li> -->
 			  </ul>
 			</div>
 		</div>
@@ -148,22 +148,27 @@
 
     </div><!-- /.container -->
 
-  <div class="container" id="specs">
+  <div class="container">
     <div class="pricing-header pt-md-5 pb-md-4">
-      <h1 class="display-4">Technical Specifications</h1>
+      <h1 class="display-4"><span id="specs"></span>Technical Specifications</h1>
 
       <div class="container fluid">
         <p class="lead" align="justify">  
-          The MiroCard has been optimized for fast wake-up times, even in indoor lighting conditions: 250 lx - 2600 lx. 
-          Natural + indoor light	2600 lx	1.7 seconds	16 packet/s.
+          The MiroCard has conveniently small form factor. Less than 2 mm thick, its surface area (60 mm x 45 mm) is smaller that a credit card.
+          The hardware has been optimized for fast wake-up times, even in indoor lighting conditions.
+          It takes a few seconds for the card to energize and broadcast BLE packets.
+          It can emit up tp 16 packets per second, in indoor environments with natural light.
+          The solar cell has a rated lifetime of 10 years, ensuring long-term indoor deployments.
         </p>
+
+        <img class='bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto' src="img/mirocard_dimensions.png" preserveAspectRatio="xMidYMid slice" alt="MiroCard Specs">
       </div>
     </div>
   </div><!-- /.container -->
 
-  <div class="container" id="open-source">
+  <div class="container">
     <div class="pricing-header pt-md-5 pb-md-4">
-      <h1 class="display-4">Open-Source</h1>
+      <h1 class="display-4"> <span id="open-source"></span> Open-Source</h1>
       <p class="lead" align="justify">The MiroCard and MiroReader app are designed by <a href="mailto:andres@mirocard.swiss">Andres Gomez</a>, inspired by the <a href="https://gitlab.ethz.ch/tec/public/employees/sigristl/transient_ble_node">Transient BLE Node project </a>  developed at <a href="https://ethz.ch/en.html">ETH Zurich</a>. The  Transient BLE Node project is an open-source project released under the Creative Commons Attribution 4.0 International License. The MiroCard hardware, firmware, and MiroReader app are open-source projects released under an MIT License. </p> <br>
     </div>
     <div class="container">
