@@ -6,12 +6,11 @@
     <meta name="description" content="">
     <meta name="author" content="Andres Gomez">
     <meta name="generator" content="Jekyll v4.1.1">
-    <title>MiroCard by Miromico</title>
+    <title>MiroCard – batteryless BLE smart card</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
 
-    <link rel="icon" href="https://miromico.ch/wp-content/uploads/2018/06/cropped-favicon-1-1-192x192.png" sizes="192x192">
-    <link rel="icon" href="https://miromico.ch/wp-content/uploads/2018/06/cropped-favicon-1-1-32x32.png" sizes="32x32">
+    <link rel="icon" href="img/MiroLogo_neg_icon-1.svg" type="image/svg+xml">
 
     <!-- Bootstrap core CSS -->
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -64,7 +63,7 @@
       <div class="container">
       <h1 class="jumbotron-heading">MiroCard</h1>
         <p class="lead text-muted-small">
-          A brand-new product, bringing new digital services in a smart-card form factor.
+          A batteryless, light-powered BLE smart card. An open-source research project.
         </p>
       </div>
     </section>
@@ -169,19 +168,31 @@
   <div class="container">
     <div class="pricing-header pt-md-5 pb-md-4">
       <h1 class="display-4"> <span id="open-source"></span> Open-Source</h1>
-      <p class="lead" align="justify">The MiroCard and MiroReader app are designed by <a href="mailto:gomez@miromico.ch">Andres Gomez</a>, inspired by the <a href="https://gitlab.ethz.ch/tec/public/employees/sigristl/transient_ble_node">Transient BLE Node project </a>  developed at <a href="https://ethz.ch/en.html">ETH Zurich</a>. The  Transient BLE Node project is an open-source project released under the Creative Commons Attribution 4.0 International License. The MiroCard hardware, firmware, and MiroReader app will be released as open-source projects under an MIT License in <span class="font-weight-bold">fall 2020. </span> <br>
+      <p class="lead" align="justify">The MiroCard and MiroReader app were designed by <a href="https://andresgomez.ch">Andres Gomez</a>, inspired by the <a href="https://gitlab.ethz.ch/tec/public/employees/sigristl/transient_ble_node">Transient BLE Node project</a> developed at <a href="https://ethz.ch/en.html">ETH Zurich</a> (released under CC BY 4.0). The MiroCard hardware, firmware and apps are open source under the BSD 3-Clause License.
+        The MiroCard was presented at ACM SenSys 2020: <a href="https://doi.org/10.1145/3384419.3430440"><em>Demo Abstract: On-Demand Communication with the Batteryless MiroCard</em></a>.</p>
     </div>
     <div class="container">
     <div class="card-deck mb-4">
       <div class="card mb-4 shadow-sm">
         <div class="card-header">
-          <h4 class="my-0 font-weight-normal"  align="center">MiroCard Device</h4>
+          <h4 class="my-0 font-weight-normal" align="center">MiroCard Hardware</h4>
         </div>
         <div class="card-body">
           <ul class="list-unstyled mt-3 mb-4">
-            <li>Altium Design files and Contiki-NG software.</li>
+            <li>Datasheet, schematics and Altium PCB project.</li>
           </ul>
-          <button type="button" class="btn btn-lg btn-block btn-primary" disabled>Go to repository</button>
+          <a class="btn btn-lg btn-block btn-primary" href="https://github.com/ansgomez/mirocard-hardware" role="button">Go to repository</a>
+        </div>
+      </div>
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal" align="center">MiroCard Firmware</h4>
+        </div>
+        <div class="card-body">
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Contiki-NG platform and example applications.</li>
+          </ul>
+          <a class="btn btn-lg btn-block btn-primary" href="https://github.com/ansgomez/mirocard-contiki-ng" role="button">Go to repository</a>
         </div>
       </div>
       <div class="card mb-4 shadow-sm">
@@ -190,11 +201,20 @@
         </div>
         <div class="card-body">
           <ul class="list-unstyled mt-3 mb-4">
-            <li>MiroReader app to visualize MiroCard data.</li>
+            <li>Android app to receive and visualize MiroCard data.</li>
           </ul>
-          <button type="button" class="btn btn-lg btn-block btn-primary" disabled>Go to repository</button>
+          <a class="btn btn-lg btn-block btn-primary" href="https://github.com/ansgomez/miroreader-app" role="button">Go to repository</a>
         </div>
       </div>
+    </div>
+    <p align="center">More tools:
+      <a href="https://github.com/ansgomez/mirocard-scanner-python">Python scanner</a> &middot;
+      <a href="https://github.com/ansgomez/mirocard-scanner-mqtt">MQTT bridge</a> &middot;
+      <a href="https://github.com/ansgomez/mirocard-scanner-influx">InfluxDB bridge</a> &middot;
+      <a href="https://github.com/ansgomez/mirocard-webid">Web Bluetooth demo</a> &middot;
+      <a href="https://github.com/ansgomez/mirocard-postprocessing">Measurement post-processing</a> &middot;
+      <a href="https://github.com/ansgomez/mirocard-plotly">Plotly visualization</a>
+    </p>
     </div>
     </div>
   </div>
@@ -202,10 +222,10 @@
 
   <div class="container" id="contact">
     <div class="pricing-header pt-md-5 pb-md-4">
-      <h1 class="display-4 ">Contact Us</h1>
+      <h1 class="display-4 ">Contact</h1>
 
       <p class="lead" align="justify">  
-        The MiroCard is currently available as engineering samples. If you are interested in ordering MiroCards or customizing your own design, please contact us: <a href="mailto:info@miromico.ch">info@miromico.ch</a>
+        The MiroCard was developed as a research project in 2020–2022. For questions, contact <a href="https://andresgomez.ch">Andres Gomez</a>.
       </p>
 
     </div>
@@ -217,12 +237,9 @@
   <!-- FOOTER -->
   <footer class="container">
     <p class="float-right">
-      <a href="https://miromico.ch/contact/?lang=en">Contact</a> &middot;
-      <a href="https://miromico.ch/data-protection/?lang=en">Data Protection</a> &middot; 
-      <a href="https://miromico.ch/imprint/?lang=en">Imprint</a> &middot;
       <a href="#">Back to top</a>
     </p>
-    <p>&copy; 2020 Andres Gomez, 
+    <p>&copy; 2020&ndash;2022 Andres Gomez, 
       <a href="https://miromico.ch/">Miromico AG</a>  
     </p>
 
